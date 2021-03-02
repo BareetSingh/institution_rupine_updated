@@ -8,6 +8,7 @@ class IntituteProfileApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }

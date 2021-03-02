@@ -1,0 +1,3 @@
+INSERT INTO instprofile
+(id, active_template_id, theme_id, institution_name, about_us, no_of_bed, icu_bed, path_lab, truma_facility, infectious_disease_facility, psychiatric_facility, ambulance_facility, website_address, status, banner_url, created_on, updated_on)
+VALUES(1,0, 0, 'Appolo Hospital', 'something about us', 200, 29, false, true, false, false, false, 'https://appolo.com', 'ACTIVE'::character varying, 'https://appolo_image.com', current_timestamp, current_timestamp);

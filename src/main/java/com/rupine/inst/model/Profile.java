@@ -13,17 +13,20 @@ import lombok.Data;
 
 @Entity
 //@Data
-@Table(name="inst_profile")
-public class Profile {
+@Table(name="instprofile")
+public class Profile {	
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue
 	private Long id;
+	
+	private String temporary;
 	
 	@Column(name="active_template_id")
 	private Long activeTemplateId;
 	
 	private Long themeId;
+	@Column(nullable = false,length = 100)
 	private String institutionName;
 	private String aboutUs;
 	private Long noOfBed;

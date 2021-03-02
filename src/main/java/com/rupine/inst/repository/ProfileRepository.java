@@ -17,6 +17,7 @@ public class ProfileRepository {
 	
 	public Profile findInstituteById(Long id) {
 		Profile instProfile = entityManager.find(Profile.class, id);
+		entityManager.detach(instProfile);
 		return instProfile;
 	}
 	
